@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    font-size: 62.5%;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    gap: 3rem;
+    color: yellow;
+    position: relative;
+    bottom: 5rem;
+
+}
+
+
+.search{
+    display: flex;
+    width: 50%;
+    max-width: 75rem;
+    gap: 5px;
+}
+
+
+.search input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.search input:focus-visible{
+    outline: 1px solid black;
+}
+
+
+.searchBtn{
+    background: purple;
+    color: yellow;
+    padding: 0.5rem 1rem;
+    border: none; 
+}
+
+.searchBtn:hover{
+    background: rgb(146, 39, 228);
+}
+
+
+
+
+/* card design */
+
+.profileBox{
+    width: 45rem;
+    padding: 4rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ;
+}
+
+.topSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.avatar{
+    height: 10rem;
+    width: 10rem;
+}
+
+.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.leftSide{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leftSide h1{
+    font-size: 1.6rem;
+}
+
+
+.topSection button{
+    align-self: center;
+    background: purple;
+    padding: 0.5rem 1rem;
+    color: yellow;
+    border: none;
+}
+
+.topSection button:hover{
+    background: rgb(146, 39, 228);
+}
+
+
+
+.aboutSection{
+    margin: 2rem;
+}
+
+
+.statusSection{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
+}
+
+.statusItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* rotate animation */
+
+.profileBox:hover{
+    transform: rotate(-6deg) scale(1.1);
+    transition: 0.5s ;
+}
+
+
+
+/* background image style  */
+.backgroundImage{
+  background: url('https://wallpaperaccess.com/full/3414987.jpg') no-repeat center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+   
